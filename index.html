@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timer App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="heading">
+        <h3>Multiple Timers App</h3>
+      </header>
+      <main>
+        <div class="set-timer">
+          <span>Set Time :</span>
+          <div class="hrs-min-sec">
+            <input id="hour" type="number" placeholder="hh" />
+            <span>:</span>
+            <input id="minute" type="number" placeholder="mm" />
+            <span>:</span>
+            <input id="second" type="number" placeholder="ss" />
+          </div>
+          <button class="setbtn">Set</button>
+        </div>
+        <div class="current-timer">
+          <span>Current Timers</span>
+        </div>
+        <div class="active-timers">
+          <span>You have no timers currently!</span>
+          <div class="time-is-up">
+            <span>Timer Is Up !</span>
+            <button class="stopbtn">Stop</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

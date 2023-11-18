@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #1c1c23;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+}
+.heading {
+  padding: 2rem 0;
+}
+.heading h3 {
+  font-weight: 400;
+  font-size: 1.38rem;
+}
+.set-timer,
+.inner-timer {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: #34354b;
+  padding: 1rem 1.3rem;
+  border-radius: 1rem;
+}
+.set-timer span,
+.inner-timer span,
+.timeleft-timer span {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.hrs-min-sec {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.hrs-min-sec input[type="number"] {
+  border: none;
+  outline: none;
+  width: 4rem;
+  background-color: #34354b;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+/* Hide the number input spinner for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.hrs-min-sec input::placeholder {
+  color: #fff;
+  text-decoration: underline;
+}
+.setbtn,
+.stopbtn {
+  width: 5rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+  background-color: #f1f657;
+  font-size: 0.7rem;
+}
+.current-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.current-timer span {
+  background-color: #39383f;
+  padding: 0.5rem 4rem;
+  border-radius: 1.5rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.active-timers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.active-timers span {
+  color: #c6c6c8;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.present {
+  display: none;
+}
+.timeleft-timer {
+  display: flex;
+  align-items: center;
+  background-color: #34354b;
+  border-radius: 1rem;
+  margin: 0.8rem 0;
+  padding: 1rem 1.3rem;
+  width: 100%;
+  gap: 2.5rem;
+}
+.timeleft-timer span {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.deletebtn {
+  width: 5rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+  background-color: #f1f657;
+  font-size: 0.7rem;
+  margin-left: 2rem;
+}
+.time-is-up {
+  background-color: #f1f657;
+  padding: 1rem 1.3rem;
+  border-radius: 1rem;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+.time-is-up span {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+  margin-left: 8.5rem;
+}
+.time-is-up button {
+  margin-left: 3rem;
+}
+.stopbtn {
+  width: 5rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+  background-color: #34354b;
+  font-size: 0.7rem;
+  color: #fff;
+}
