@@ -113,7 +113,6 @@ setBtn.addEventListener("click", () => {
     startTimerForDiv(innerTimerDiv);
   }
 });
-
 function startTimerForDiv(timerDiv) {
   const setHour = parseInt(timerDiv.querySelector("#sethour").value);
   const setMinute = parseInt(timerDiv.querySelector("#setminute").value);
@@ -131,6 +130,11 @@ function startTimerForDiv(timerDiv) {
 
       const timeUpMessage = document.querySelector(".time-is-up");
       timeUpMessage.style.display = "flex";
+
+      // Add audio notification when timer is up
+      const audio = new Audio("ALARM.mp3");
+      audio.play();
+      return;
     }
 
     const hoursLeft = Math.floor(totalTimeInSeconds / 3600);
